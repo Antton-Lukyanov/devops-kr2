@@ -7,4 +7,4 @@ COPY --chown=app:app . .
 ENV REDIS_HOST=redis PORT=8004 STUDENT=Лукьянов
 USER app
 EXPOSE 8004
-CMD ["python", "app.py"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8004", "app:app"]
