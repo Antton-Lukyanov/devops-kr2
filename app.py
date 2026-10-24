@@ -1,3 +1,4 @@
+# KR2: Лукьянов
 import os
 import socket
 
